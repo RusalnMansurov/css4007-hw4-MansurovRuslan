@@ -1,0 +1,105 @@
+{
+  "question_id": "Q-12",
+  "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Tarnvale has the higher 2025 budget per school pupil: approximately 64.4 thousand tenge more per pupil.\n\nANSWER: Tarnvale | 64.4",
+  "parsed": {
+    "name": "Tarnvale",
+    "value": 64.4
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2059,
+  "output_tokens": 224,
+  "total_seconds": 5.614242299983744,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_5up9DRsfgOOlHL5toqY6vtPL",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "budget_2025_million_tenge",
+        "value": 16021.7,
+        "unit": "million tenge",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.0003717999788932502
+    },
+    {
+      "round": 1,
+      "id": "call_7q1dGkLw3dBpHwb7QjEoBJv6",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "pupils_2025_26",
+        "value": 13904,
+        "unit": "pupils",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.00018560001626610756
+    },
+    {
+      "round": 1,
+      "id": "call_TQubbIiptxpWrqeJf6pZjkWd",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "budget_2025_million_tenge",
+        "value": 12960.3,
+        "unit": "million tenge",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.00016830000095069408
+    },
+    {
+      "round": 1,
+      "id": "call_tEAzQvraWKoUHV6KztTSK5ZU",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "pupils_2025_26",
+        "value": 10652,
+        "unit": "pupils",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.00014479999663308263
+    },
+    {
+      "round": 2,
+      "id": "call_wQWDRCI2EeispxIMuwr08g69",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"16021.7*1000/13904\"}",
+      "result": {
+        "result": 1152.3086881472957
+      },
+      "seconds": 6.9500005338341e-05
+    },
+    {
+      "round": 2,
+      "id": "call_WDkbX5xDKUcymugIhk0XOsXJ",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"12960.3*1000/10652\"}",
+      "result": {
+        "result": 1216.7010889973715
+      },
+      "seconds": 2.4500011932104826e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

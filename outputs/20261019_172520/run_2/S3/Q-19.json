@@ -1,0 +1,115 @@
+{
+  "question_id": "Q-19",
+  "question": "Which district has the denser paved road network, Lindenmoor or Redfen, and by how many km of road per square kilometre?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Lindenmoor has the denser paved road network: 0.035 km of road per square kilometre more than Redfen.\n\nANSWER: Lindenmoor | 0.035",
+  "parsed": {
+    "name": "Lindenmoor",
+    "value": 0.035
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2020,
+  "output_tokens": 234,
+  "total_seconds": 5.202289999986533,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_IE0DQ9CBFbPPGYf0el9IvKms",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"paved_road_km\"}",
+      "result": {
+        "district": "Lindenmoor",
+        "field": "paved_road_km",
+        "value": 402.3,
+        "unit": "km",
+        "sources": [
+          "NR-08"
+        ]
+      },
+      "seconds": 0.0014411000302061439
+    },
+    {
+      "round": 1,
+      "id": "call_C04vED5QA8zbcfWOHRjs2FC2",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"area_km2\"}",
+      "result": {
+        "district": "Lindenmoor",
+        "field": "area_km2",
+        "value": 1015.7,
+        "unit": "km2",
+        "sources": [
+          "NR-08"
+        ]
+      },
+      "seconds": 0.0003208999987691641
+    },
+    {
+      "round": 1,
+      "id": "call_cKdb4AdDtEOcIucxAh2Hr1RS",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"paved_road_km\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "paved_road_km",
+        "value": 244.6,
+        "unit": "km",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.00028660002863034606
+    },
+    {
+      "round": 1,
+      "id": "call_yxBux7DQMJML2HMZXNWcg1dy",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"area_km2\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "area_km2",
+        "value": 677.1,
+        "unit": "km2",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.0002612000098451972
+    },
+    {
+      "round": 2,
+      "id": "call_WeXBFz8D3CAjSCHf9HOeWhZb",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"402.3/1015.7\"}",
+      "result": {
+        "result": 0.3960815201338978
+      },
+      "seconds": 0.00010849995305761695
+    },
+    {
+      "round": 2,
+      "id": "call_oHqjrRzM7N1VdkDcXHKhaRFR",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"244.6/677.1\"}",
+      "result": {
+        "result": 0.36124649239403334
+      },
+      "seconds": 4.3199979700148106e-05
+    },
+    {
+      "round": 2,
+      "id": "call_UIBoYU1qFNO8L4ox1m4r39rU",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"244.6/677.1-402.3/1015.7\"}",
+      "result": {
+        "result": -0.034835027739864466
+      },
+      "seconds": 5.820003570988774e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

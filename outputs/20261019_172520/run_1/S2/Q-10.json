@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-10",
+  "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: stonecairn | 8",
+  "parsed": {
+    "name": "stonecairn",
+    "value": 8.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11090,
+  "output_tokens": 198,
+  "total_seconds": 6.955882699985523,
+  "samples": [
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Therefore, Stonecairn is 8 years older.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 46,
+      "seconds": 1.4244453000137582
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 49,
+      "seconds": 1.746276099991519
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Stonecairn is therefore 8 years older.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 45,
+      "seconds": 1.52229549997719
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Therefore, Stonecairn is 8 years older.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 46,
+      "seconds": 1.2453449000022374
+    },
+    {
+      "answer": "ANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 12,
+      "seconds": 1.0172903000493534
+    }
+  ],
+  "votes_for_winner": 5,
+  "correct": true,
+  "error": null
+}

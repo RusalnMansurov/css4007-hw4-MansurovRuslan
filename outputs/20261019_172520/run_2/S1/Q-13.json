@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-13",
+  "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Coldharbour | 4.16%",
+  "parsed": {
+    "name": "Coldharbour",
+    "value": 4.16
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2223,
+  "output_tokens": 14,
+  "total_seconds": 1.0482485999818891,
+  "seconds": 1.0482485999818891,
+  "correct": true,
+  "error": null
+}

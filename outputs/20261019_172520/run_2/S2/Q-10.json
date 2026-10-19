@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-10",
+  "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: stonecairn | 8",
+  "parsed": {
+    "name": "stonecairn",
+    "value": 8.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11090,
+  "output_tokens": 243,
+  "total_seconds": 6.927662200003397,
+  "samples": [
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 49,
+      "seconds": 1.416541899961885
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 49,
+      "seconds": 1.298224600031972
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Difference: 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 48,
+      "seconds": 1.7305465000099503
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Difference: 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 48,
+      "seconds": 1.2181443000445142
+    },
+    {
+      "answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed": {
+        "name": "Stonecairn",
+        "value": 8.0
+      },
+      "input_tokens": 2218,
+      "output_tokens": 49,
+      "seconds": 1.2639856999740005
+    }
+  ],
+  "votes_for_winner": 5,
+  "correct": true,
+  "error": null
+}

@@ -1,0 +1,147 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield households paid more: 884 tenge per resident.\n\nANSWER: Harrowfield | 884",
+  "parsed": {
+    "name": "Harrowfield",
+    "value": 884.0
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2393,
+  "output_tokens": 290,
+  "total_seconds": 7.475881899998058,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_DWXLoYG98hh4eda9MchOtycL",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.0016846000216901302
+    },
+    {
+      "round": 1,
+      "id": "call_E5lcO0aFqLacaMB8eOigDmU1",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "water_2025_m3",
+        "value": 7146000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.0004398999735713005
+    },
+    {
+      "round": 1,
+      "id": "call_xcX56Myonr3LPHVKtoyvcknA",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "population_2025",
+        "value": 90212,
+        "unit": "residents",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.0002899999963119626
+    },
+    {
+      "round": 1,
+      "id": "call_bfSxntwU4Dmw4hgwHFqMKAVb",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.0002764000091701746
+    },
+    {
+      "round": 1,
+      "id": "call_pvCcnuWYjAZPrSJBL8JHw6Xh",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "water_2025_m3",
+        "value": 3862000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00023140001576393843
+    },
+    {
+      "round": 1,
+      "id": "call_6MON20H4KyoNpVTi5tInvfiB",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "population_2025",
+        "value": 52904,
+        "unit": "residents",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00021680002100765705
+    },
+    {
+      "round": 2,
+      "id": "call_fVaiUcNotahNXNA8pBO3NUHP",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"7146000*142.35/90212\"}",
+      "result": {
+        "result": 11276.028687979426
+      },
+      "seconds": 0.00012809998588636518
+    },
+    {
+      "round": 2,
+      "id": "call_WvadUTs5zyehidHzfNANHTHK",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"3862000*142.35/52904\"}",
+      "result": {
+        "result": 10391.571525782549
+      },
+      "seconds": 5.3099996875971556e-05
+    },
+    {
+      "round": 2,
+      "id": "call_bKwD77Sk1ZqYiD7gR8MUzK6f",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"7146000*142.35/90212-3862000*142.35/52904\"}",
+      "result": {
+        "result": 884.4571621968771
+      },
+      "seconds": 7.469998672604561e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

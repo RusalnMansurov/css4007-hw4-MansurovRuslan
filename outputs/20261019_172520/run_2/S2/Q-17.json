@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: harrowfield | 886",
+  "parsed": {
+    "name": "harrowfield",
+    "value": 886.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11165,
+  "output_tokens": 977,
+  "total_seconds": 13.777789600018878,
+  "samples": [
+    {
+      "answer": "Harrowfield’s households paid more per resident.\n\nHarrowfield: \\(7{,}146{,}000 \\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}277.93\\) tenge per resident.\n\nOssbridge: \\(3{,}862{,}000 \\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}391.89\\) tenge per resident.\n\nDifference: \\(11{,}277.93 - 10{,}391.89 = 886.04\\) tenge, rounded to 0 decimals.\n\nANSWER: Harrowfield | 886",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 886.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 158,
+      "seconds": 3.024150000012014
+    },
+    {
+      "answer": "Harrowfield’s per-resident water cost:\n\n- 7,146 ML = 7,146,000 m³\n- Total cost = 7,146,000 × 142.35 = 1,017,? Wait: 7,146,000 × 142.35 = 1,017,?  \n  142.35 × 7,146 = 1,017,? 142.35×7000=996,450; ×146=20,? 142.35×146=20,? (142.35×100=14,235; ×40=5,694; ×6=854.1; total 20,783.1), sum 1,017,233.1; ×1,000 = 1,017,233,100 tenge.\n- Per resident = 1,017,233,100 ÷ 90,212 = 11,275.88 tenge.\n\nOssbridge’s per-resident water cost:\n\n- 3,862 ML = 3,862,000 m³\n- Total cost = 3,862,000 × 142.35 = 549,?  \n  142.35 × 3,862 = 549,? (×3,800=540,930; ×62=8,825.7) = 549,755.7; ×1,000 = 549,755,700 tenge.\n- Per resident = 549,755,700 ÷ 52,904 = 10,391.64 tenge.\n\nDifference = 11,275.88 − 10,391.64 = 884.24 tenge, rounded to 884.\n\nANSWER: Harrowfield | 884",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 884.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 369,
+      "seconds": 4.092020299984142
+    },
+    {
+      "answer": "Harrowfield’s households paid more.\n\nHarrowfield: \\(7{,}146{,}000\\ \\text{m}^3 \\times 142.35 \\div 90{,}212 = 11{,}278.94\\) tenge per resident.\n\nOssbridge: \\(3{,}862{,}000\\ \\text{m}^3 \\times 142.35 \\div 52{,}904 = 10{,}391.08\\) tenge per resident.\n\nDifference: \\(11{,}278.94 - 10{,}391.08 = 887.86\\), which rounds to 888 tenge per resident.\n\nANSWER: Harrowfield | 888",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 888.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 159,
+      "seconds": 2.101315100037027
+    },
+    {
+      "answer": "Harrowfield: 7,146 ML = 7,146,000 m³; 7,146,000 × 142.35 ÷ 90,212 = 11,279.76 tenge/resident.\n\nOssbridge: 3,862 ML = 3,862,000 m³; 3,862,000 × 142.35 ÷ 52,904 = 10,391.19 tenge/resident.\n\nDifference: 11,279.76 − 10,391.19 = 888.57, rounded to 0 decimals = 889.\n\nANSWER: Harrowfield | 889",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 889.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 137,
+      "seconds": 2.2448988999822177
+    },
+    {
+      "answer": "Harrowfield households paid more per resident.\n\nHarrowfield: \\(7{,}146{,}000 \\text{ m}^3 \\times 142.35 \\div 90{,}212 = 11{,}277.58\\) tenge per resident.\n\nOssbridge: \\(3{,}862{,}000 \\text{ m}^3 \\times 142.35 \\div 52{,}904 = 10{,}391.29\\) tenge per resident.\n\nDifference: \\(11{,}277.58 - 10{,}391.29 = 886.29\\), rounded to 0 decimals.\n\nANSWER: Harrowfield | 886",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 886.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 154,
+      "seconds": 2.3151672999956645
+    }
+  ],
+  "votes_for_winner": 2,
+  "correct": false,
+  "error": null
+}

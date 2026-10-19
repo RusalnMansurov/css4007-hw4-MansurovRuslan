@@ -1,0 +1,116 @@
+{
+  "question_id": "Q-09",
+  "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+  "strategy": "S3-vague",
+  "model": "gpt-5.6-luna",
+  "answer": "Millbrook has the higher 2025 population density by 0.6 residents per square kilometre (49.0 vs. 48.5).\n\nANSWER: Millbrook | 0.6",
+  "parsed": {
+    "name": "Millbrook",
+    "value": 0.6
+  },
+  "unanswered": false,
+  "rounds": 4,
+  "input_tokens": 2633,
+  "output_tokens": 229,
+  "total_seconds": 5.818593100004364,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_5oq78oaTl96f1KidgTUOylGN",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Brightwater",
+        "field": "population_2025",
+        "value": 44675,
+        "unit": "residents",
+        "sources": [
+          "NR-05"
+        ]
+      },
+      "seconds": 0.00034139998024329543
+    },
+    {
+      "round": 1,
+      "id": "call_F4v7lOjrcg0s9yDcG3tBGrLA",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Brightwater\", \"field\": \"area_km2\"}",
+      "result": {
+        "district": "Brightwater",
+        "field": "area_km2",
+        "value": 921.4,
+        "unit": "km2",
+        "sources": [
+          "NR-05",
+          "NR-16"
+        ]
+      },
+      "seconds": 0.0005703000351786613
+    },
+    {
+      "round": 1,
+      "id": "call_bxWSmDEs8bg9GvJTqcioDp7z",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "population_2025",
+        "value": 37203,
+        "unit": "residents",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.0002169000217691064
+    },
+    {
+      "round": 1,
+      "id": "call_D8ZbcWutVEWNdo8UVYmDPoGk",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"area_km2\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "area_km2",
+        "value": 758.6,
+        "unit": "km2",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.00016519997734576464
+    },
+    {
+      "round": 2,
+      "id": "call_ZcxE5VznGWESusJPwKUOBLPF",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"44675/921.4\"}",
+      "result": {
+        "result": 48.48599956587801
+      },
+      "seconds": 0.00011869997251778841
+    },
+    {
+      "round": 2,
+      "id": "call_FzQ79XAgYbe3mlNaOsHY4O79",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"37203/758.6\"}",
+      "result": {
+        "result": 49.041655681518584
+      },
+      "seconds": 4.869996337220073e-05
+    },
+    {
+      "round": 3,
+      "id": "call_IfRg4KULNJ9FBBARF4eitCMm",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"37203/758.6-44675/921.4\"}",
+      "result": {
+        "result": 0.5556561156405735
+      },
+      "seconds": 0.00013550004223361611
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

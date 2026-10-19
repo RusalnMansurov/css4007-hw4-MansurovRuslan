@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-07",
+  "question": "Which district has more paved road per 1,000 residents in 2025, Coldharbour or Stonecairn, and by how many km per 1,000 residents?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: coldharbour | 18.49",
+  "parsed": {
+    "name": "coldharbour",
+    "value": 18.49
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11155,
+  "output_tokens": 574,
+  "total_seconds": 8.95924269995885,
+  "samples": [
+    {
+      "answer": "Coldharbour: \\(598.3 \\div 11,407 \\times 1,000 = 52.45\\) km per 1,000 residents.\n\nStonecairn: \\(506.8 \\div 14,926 \\times 1,000 = 33.96\\) km per 1,000 residents.\n\nDifference: \\(52.45 - 33.96 = 18.49\\) km per 1,000 residents.\n\nANSWER: Coldharbour | 18.49",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 18.49
+      },
+      "input_tokens": 2231,
+      "output_tokens": 110,
+      "seconds": 1.5779062999645248
+    },
+    {
+      "answer": "Coldharbour: \\(598.3 \\div 11{,}407 \\times 1{,}000 = 52.46\\) km per 1,000 residents.\n\nStonecairn: \\(506.8 \\div 14{,}926 \\times 1{,}000 = 33.96\\) km per 1,000 residents.\n\nDifference: \\(52.46 - 33.96 = 18.50\\) km per 1,000 residents.\n\nANSWER: Coldharbour | 18.50",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 18.5
+      },
+      "input_tokens": 2231,
+      "output_tokens": 118,
+      "seconds": 1.7298384999739937
+    },
+    {
+      "answer": "Coldharbour: \\(598.3 \\div 11{,}407 \\times 1{,}000 = 52.45\\) km per 1,000 residents.\n\nStonecairn: \\(506.8 \\div 14{,}926 \\times 1{,}000 = 33.96\\) km per 1,000 residents.\n\nDifference: \\(52.45 - 33.96 = 18.49\\) km per 1,000 residents.\n\nANSWER: Coldharbour | 18.49",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 18.49
+      },
+      "input_tokens": 2231,
+      "output_tokens": 118,
+      "seconds": 2.098448999982793
+    },
+    {
+      "answer": "Coldharbour: \\(598.3 \\div 11{,}407 \\times 1{,}000 = 52.46\\) km per 1,000 residents.\n\nStonecairn: \\(506.8 \\div 14{,}926 \\times 1{,}000 = 33.96\\) km per 1,000 residents.\n\nDifference: \\(52.46 - 33.96 = 18.50\\) km per 1,000 residents.\n\nANSWER: Coldharbour | 18.50",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 18.5
+      },
+      "input_tokens": 2231,
+      "output_tokens": 118,
+      "seconds": 1.8214891999959946
+    },
+    {
+      "answer": "Coldharbour: \\(598.3 \\div 11,407 \\times 1,000 = 52.45\\) km per 1,000 residents.\n\nStonecairn: \\(506.8 \\div 14,926 \\times 1,000 = 33.96\\) km per 1,000 residents.\n\nDifference: \\(52.45 - 33.96 = 18.49\\) km per 1,000 residents.\n\nANSWER: Coldharbour | 18.49",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 18.49
+      },
+      "input_tokens": 2231,
+      "output_tokens": 110,
+      "seconds": 1.7313143000355922
+    }
+  ],
+  "votes_for_winner": 3,
+  "correct": true,
+  "error": null
+}

@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-19",
+  "question": "Which district has the denser paved road network, Lindenmoor or Redfen, and by how many km of road per square kilometre?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: lindenmoor | 0.035",
+  "parsed": {
+    "name": "lindenmoor",
+    "value": 0.035
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11105,
+  "output_tokens": 488,
+  "total_seconds": 8.47754160000477,
+  "samples": [
+    {
+      "answer": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396081\\) km/km².  \nRedfen: \\(244.6 \\div 677.1 = 0.361246\\) km/km².  \nDifference: \\(0.396081 - 0.361246 = 0.034835\\) km/km², which rounds to \\(0.035\\).\n\nANSWER: Lindenmoor | 0.035",
+      "parsed": {
+        "name": "Lindenmoor",
+        "value": 0.035
+      },
+      "input_tokens": 2221,
+      "output_tokens": 101,
+      "seconds": 1.6838816000381485
+    },
+    {
+      "answer": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396278...\\) km/km².\n\nRedfen: \\(244.6 \\div 677.1 = 0.361248...\\) km/km².\n\nDifference: \\(0.396278... - 0.361248... = 0.035030...\\) km/km², so Lindenmoor is denser.\n\nANSWER: Lindenmoor | 0.035",
+      "parsed": {
+        "name": "Lindenmoor",
+        "value": 0.035
+      },
+      "input_tokens": 2221,
+      "output_tokens": 99,
+      "seconds": 1.8939533999655396
+    },
+    {
+      "answer": "Lindenmoor’s paved road density is \\(402.3 \\div 1,015.7 = 0.396\\) km/km². Redfen’s is \\(244.6 \\div 677.1 = 0.361\\) km/km². The difference is \\(0.035\\) km/km², so Lindenmoor is denser.\n\nANSWER: Lindenmoor | 0.035",
+      "parsed": {
+        "name": "Lindenmoor",
+        "value": 0.035
+      },
+      "input_tokens": 2221,
+      "output_tokens": 88,
+      "seconds": 1.6395556000061333
+    },
+    {
+      "answer": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396278...\\) km/km².\n\nRedfen: \\(244.6 \\div 677.1 = 0.361276...\\) km/km².\n\nDifference: \\(0.396278... - 0.361276... = 0.035002...\\) km/km², so Lindenmoor is denser.\n\nANSWER: Lindenmoor | 0.035",
+      "parsed": {
+        "name": "Lindenmoor",
+        "value": 0.035
+      },
+      "input_tokens": 2221,
+      "output_tokens": 99,
+      "seconds": 1.6356227000360377
+    },
+    {
+      "answer": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.395975\\) km/km².  \nRedfen: \\(244.6 \\div 677.1 = 0.361307\\) km/km².  \nDifference: \\(0.395975 - 0.361307 = 0.034668\\) km/km², which rounds to \\(0.035\\).\n\nANSWER: Lindenmoor | 0.035",
+      "parsed": {
+        "name": "Lindenmoor",
+        "value": 0.035
+      },
+      "input_tokens": 2221,
+      "output_tokens": 101,
+      "seconds": 1.624294999986887
+    }
+  ],
+  "votes_for_winner": 5,
+  "correct": true,
+  "error": null
+}

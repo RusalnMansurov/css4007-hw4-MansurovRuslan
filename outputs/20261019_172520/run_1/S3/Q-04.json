@@ -1,0 +1,115 @@
+{
+  "question_id": "Q-04",
+  "question": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Millbrook has more pupils per school: 370.80 compared with Ashgrove’s 368.21, a difference of 2.59 pupils per school.\n\nANSWER: Millbrook | 2.59",
+  "parsed": {
+    "name": "Millbrook",
+    "value": 2.59
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2024,
+  "output_tokens": 235,
+  "total_seconds": 5.094455000013113,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_mYiyRzRkxgj15CNfTflUhXer",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "pupils_2025_26",
+        "value": 8837,
+        "unit": "pupils",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.001058699970599264
+    },
+    {
+      "round": 1,
+      "id": "call_bupnjytlvfdeiobJhwKv92Vx",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "schools_2025_26",
+        "value": 24,
+        "unit": "schools",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.0006256999913603067
+    },
+    {
+      "round": 1,
+      "id": "call_UPrxvk57VCS6PldK9A1CJTgn",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "pupils_2025_26",
+        "value": 5562,
+        "unit": "pupils",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.0005326999817043543
+    },
+    {
+      "round": 1,
+      "id": "call_32z1QD0EyTBJsQs1J7H6SZme",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "schools_2025_26",
+        "value": 15,
+        "unit": "schools",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.0004913000157102942
+    },
+    {
+      "round": 2,
+      "id": "call_RBji83xM2za0koKg6IG0Q1zK",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"8837/24\"}",
+      "result": {
+        "result": 368.2083333333333
+      },
+      "seconds": 0.00010639999527484179
+    },
+    {
+      "round": 2,
+      "id": "call_AHtWvfJrSLTZm7jPCuG5X7KV",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"5562/15\"}",
+      "result": {
+        "result": 370.8
+      },
+      "seconds": 4.429998807609081e-05
+    },
+    {
+      "round": 2,
+      "id": "call_CLrlyDNECEgiBNU43Axxblgk",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"8837/24-5562/15\"}",
+      "result": {
+        "result": -2.591666666666697
+      },
+      "seconds": 5.4100004490464926e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

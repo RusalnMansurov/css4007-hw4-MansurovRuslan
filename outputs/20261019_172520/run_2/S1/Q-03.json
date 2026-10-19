@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-03",
+  "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "Lindenmoor; water use per resident per day:\n\n- Lindenmoor: 2,151,400 m³ × 1,000 ÷ 29,051 ÷ 365 = 202.8 litres\n- Kelmarsh: 1,739 ML × 1,000 ÷ 24,117 ÷ 365 = 197.6 litres\n- Difference: 5.2 litres per resident per day\n\nANSWER: Lindenmoor | 5.2",
+  "parsed": {
+    "name": "Lindenmoor",
+    "value": 5.2
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2218,
+  "output_tokens": 102,
+  "total_seconds": 1.8113021000172012,
+  "seconds": 1.8113021000172012,
+  "correct": true,
+  "error": null
+}

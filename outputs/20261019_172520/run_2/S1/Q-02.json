@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-02",
+  "question": "Between the 2020 and 2025 censuses, which district grew faster in percentage terms, Tarnvale or Harrowfield, and by how many percentage points?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "Tarnvale grew by \\( \\frac{71,388-67,214}{67,214}\\times100 = 6.21\\% \\).\n\nHarrowfield grew by \\( \\frac{90,212-83,609}{83,609}\\times100 = 7.90\\% \\).\n\nHarrowfield grew faster by \\(7.90-6.21=1.69\\) percentage points.\n\nANSWER: Harrowfield | 1.69",
+  "parsed": {
+    "name": "Harrowfield",
+    "value": 1.69
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2218,
+  "output_tokens": 100,
+  "total_seconds": 1.7805712000117637,
+  "seconds": 1.7805712000117637,
+  "correct": true,
+  "error": null
+}

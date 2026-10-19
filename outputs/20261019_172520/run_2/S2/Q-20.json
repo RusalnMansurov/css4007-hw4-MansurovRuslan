@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-20",
+  "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: ashgrove | 3005",
+  "parsed": {
+    "name": "ashgrove",
+    "value": 3005.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11170,
+  "output_tokens": 727,
+  "total_seconds": 11.11483659996884,
+  "samples": [
+    {
+      "answer": "Using the 2025 budget and population figures:\n\n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,488.43 tenge/resident\n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,490.47 tenge/resident\n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,593.67 tenge/resident\n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by 3,002.04 tenge per resident, which rounds to 3,002.\n\nANSWER: Ashgrove | 3002",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 3002.0
+      },
+      "input_tokens": 2234,
+      "output_tokens": 149,
+      "seconds": 2.2514965999871492
+    },
+    {
+      "answer": "Ossbridge: 9,284.5 million ÷ 52,904 = 175,485.58 tenge/resident  \nAshgrove: 10,488.1 million ÷ 58,760 = 178,490.81 tenge/resident  \nHarrowfield: 16,021.7 million ÷ 90,212 = 177,594.54 tenge/resident  \n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by 3,005.23 tenge per resident, rounded to 0 decimals.\n\nANSWER: Ashgrove | 3005",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 3005.0
+      },
+      "input_tokens": 2234,
+      "output_tokens": 135,
+      "seconds": 2.033743600011803
+    },
+    {
+      "answer": "Using the 2025 budgets and populations:\n\n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,485.57 tenge per resident\n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,490.81 tenge per resident\n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,600.32 tenge per resident\n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by 3,005.24 tenge per resident, which rounds to 3,005.\n\nANSWER: Ashgrove | 3005",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 3005.0
+      },
+      "input_tokens": 2234,
+      "output_tokens": 148,
+      "seconds": 2.2391564000281505
+    },
+    {
+      "answer": "Ossbridge: 9,284.5 million ÷ 52,904 = 175,485.22 tenge per resident.  \nAshgrove: 10,488.1 million ÷ 58,760 = 178,490.81 tenge per resident.  \nHarrowfield: 16,021.7 million ÷ 90,212 = 177,594.49 tenge per resident.\n\nAshgrove had the largest budget per resident. Difference from the lowest, Ossbridge: 178,490.81 − 175,485.22 = 3,005.59, rounded to 3,006 tenge per resident.\n\nANSWER: Ashgrove | 3006",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 3006.0
+      },
+      "input_tokens": 2234,
+      "output_tokens": 151,
+      "seconds": 2.0833756999927573
+    },
+    {
+      "answer": "Budgets per resident:\n\n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,489.36 tenge/resident\n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,490.64 tenge/resident\n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,598.72 tenge/resident\n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by 3,001.28 tenge per resident, which rounds to 3,001.\n\nANSWER: Ashgrove | 3001",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 3001.0
+      },
+      "input_tokens": 2234,
+      "output_tokens": 144,
+      "seconds": 2.5067994000273757
+    }
+  ],
+  "votes_for_winner": 2,
+  "correct": false,
+  "error": null
+}

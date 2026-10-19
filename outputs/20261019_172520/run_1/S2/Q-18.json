@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-18",
+  "question": "If Millbrook's population grows by the same percentage from 2025 to 2030 as it did from 2020 to 2025, will it exceed 40,000 residents in 2030? Give the projected 2030 population.",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: yes | 40013",
+  "parsed": {
+    "name": "yes",
+    "value": 40013.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11220,
+  "output_tokens": 586,
+  "total_seconds": 11.105572199972812,
+  "samples": [
+    {
+      "answer": "Millbrook’s growth from 2020 to 2025 was:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\n\\]\n\nApplying the same percentage growth to the 2025 population:\n\n\\[\n37,203\\left(1+\\frac{2,613}{34,590}\\right)=40,013.2878\n\\]\n\nRounded to the nearest resident, the projected 2030 population is 40,013, which exceeds 40,000.\n\nANSWER: yes | 40013",
+      "parsed": {
+        "name": "yes",
+        "value": 40013.0
+      },
+      "input_tokens": 2244,
+      "output_tokens": 122,
+      "seconds": 2.5056523999664932
+    },
+    {
+      "answer": "Millbrook’s growth from 2020 to 2025 was:\n\n\\[\n\\frac{37,203-34,590}{34,590}\\times 100\n=7.5536\\%\n\\]\n\nApplying the same percentage growth to the 2025 population:\n\n\\[\n37,203 \\times \\frac{37,203}{34,590}\n=40,009.97\n\\]\n\nRounded to the nearest resident, the projected 2030 population is 40,010, so it would exceed 40,000.\n\nANSWER: yes | 40010",
+      "parsed": {
+        "name": "yes",
+        "value": 40010.0
+      },
+      "input_tokens": 2244,
+      "output_tokens": 120,
+      "seconds": 2.168865400017239
+    },
+    {
+      "answer": "Millbrook’s 2020–2025 growth was:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\n\\]\n\nApplying the same percentage growth to the 2025 population:\n\n\\[\n37,203\\left(1+\\frac{2,613}{34,590}\\right)\\approx 40,013.82\n\\]\n\nThis exceeds 40,000 residents. Rounded to the nearest whole resident:\n\nANSWER: yes | 40014",
+      "parsed": {
+        "name": "yes",
+        "value": 40014.0
+      },
+      "input_tokens": 2244,
+      "output_tokens": 111,
+      "seconds": 2.074229200021364
+    },
+    {
+      "answer": "Millbrook’s growth from 2020 to 2025 was:\n\n\\[\n\\frac{37,203-34,590}{34,590}=\\frac{2,613}{34,590}\\approx 7.5536\\%\n\\]\n\nApplying the same percentage growth to the 2025 population:\n\n\\[\n37,203 \\times \\left(1+\\frac{2,613}{34,590}\\right)\\approx 40,013.11\n\\]\n\nRounded to the nearest resident, the projected 2030 population is 40,013, which exceeds 40,000.\n\nANSWER: yes | 40013",
+      "parsed": {
+        "name": "yes",
+        "value": 40013.0
+      },
+      "input_tokens": 2244,
+      "output_tokens": 133,
+      "seconds": 2.414169399999082
+    },
+    {
+      "answer": "Millbrook’s growth from 2020 to 2025 was:\n\n\\(37,203 - 34,590 = 2,613\\)\n\nGrowth rate:\n\n\\(2,613 / 34,590 = 0.07554293\\)\n\nProjected 2030 population:\n\n\\(37,203 \\times (1 + 0.07554293) = 40,013.09\\)\n\nThis exceeds 40,000 residents.\n\nANSWER: yes | 40013",
+      "parsed": {
+        "name": "yes",
+        "value": 40013.0
+      },
+      "input_tokens": 2244,
+      "output_tokens": 100,
+      "seconds": 1.942385700007435
+    }
+  ],
+  "votes_for_winner": 3,
+  "correct": true,
+  "error": null
+}

@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-11",
+  "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "Redfen has the fewest pupils per school: 314.70 pupils per school. The highest is Ashgrove at 368.21, so the difference is 53.51 pupils per school.\n\nANSWER: Redfen | 53.51",
+  "parsed": {
+    "name": "Redfen",
+    "value": 53.51
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2227,
+  "output_tokens": 54,
+  "total_seconds": 2.174628200009465,
+  "seconds": 2.174628200009465,
+  "correct": false,
+  "error": null
+}

@@ -1,0 +1,17 @@
+{
+  "run": 1,
+  "strategy": "S1",
+  "questions": 3,
+  "correct": 3,
+  "unanswered": 0,
+  "input_tokens": 6642,
+  "output_tokens": 229,
+  "median_seconds_per_question": 1.6023753000190482,
+  "total_seconds": 5.219672600040212,
+  "cost_usd": null,
+  "per_question": {
+    "Q-01": true,
+    "Q-02": true,
+    "Q-09": true
+  }
+}

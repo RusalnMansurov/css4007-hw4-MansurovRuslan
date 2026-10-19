@@ -1,0 +1,95 @@
+{
+  "question_id": "Q-03",
+  "question": "In 2025, which district's households used more water per resident per day, Lindenmoor or Kelmarsh, and by how many litres per resident per day?",
+  "strategy": "S3-vague",
+  "model": "gpt-5.6-luna",
+  "answer": "Lindenmoor used more water: 1,949.2 litres per resident per day more than Kelmarsh.\n\nANSWER: Lindenmoor | 1949.2",
+  "parsed": {
+    "name": "Lindenmoor",
+    "value": 1949.2
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 1834,
+  "output_tokens": 184,
+  "total_seconds": 5.377454400004353,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_ikp3WL4CyEtFvLtEB5gyFgrc",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Lindenmoor",
+        "field": "water_2025_m3",
+        "value": 2151400.0,
+        "unit": "m3",
+        "sources": [
+          "NR-08"
+        ]
+      },
+      "seconds": 0.0014571999781765044
+    },
+    {
+      "round": 1,
+      "id": "call_U87ti5n2DRRzReGlBCy2OR61",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Lindenmoor",
+        "field": "population_2025",
+        "value": 29051,
+        "unit": "residents",
+        "sources": [
+          "NR-08"
+        ]
+      },
+      "seconds": 0.0006279000081121922
+    },
+    {
+      "round": 1,
+      "id": "call_Nhkgjxy30wJKb2ZoS8nIYQo4",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Kelmarsh",
+        "field": "water_2025_m3",
+        "value": 1739000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-04"
+        ]
+      },
+      "seconds": 0.0005522000137716532
+    },
+    {
+      "round": 1,
+      "id": "call_GU7KeyikiWp3dxYwQxpnUwrI",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Kelmarsh",
+        "field": "population_2025",
+        "value": 24117,
+        "unit": "residents",
+        "sources": [
+          "NR-04"
+        ]
+      },
+      "seconds": 0.0002742999931797385
+    },
+    {
+      "round": 2,
+      "id": "call_NaWN1E3axmg30LT3Ei9IbkFM",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"(2151400/29051*1000)-(1739000/24117*1000)\"}",
+      "result": {
+        "result": 1949.1579127750738
+      },
+      "seconds": 0.00021460000425577164
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": false,
+  "error": null
+}

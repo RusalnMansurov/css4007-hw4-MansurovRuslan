@@ -1,0 +1,105 @@
+{
+  "question_id": "Q-02",
+  "question": "Between the 2020 and 2025 censuses, which district grew faster in percentage terms, Tarnvale or Harrowfield, and by how many percentage points?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield grew faster: 7.90% versus Tarnvale’s 6.21%, a difference of 1.69 percentage points.\n\nANSWER: Harrowfield | 1.69",
+  "parsed": {
+    "name": "Harrowfield",
+    "value": 1.69
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 1989,
+  "output_tokens": 215,
+  "total_seconds": 5.29368289996637,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_OcQuEF4feLxFl9psXT01j1Ws",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2020\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "population_2020",
+        "value": 67214,
+        "unit": "residents",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.0008116000099107623
+    },
+    {
+      "round": 1,
+      "id": "call_YkMMm2p1A2MiNGoK9yFCkSrg",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "population_2025",
+        "value": 71388,
+        "unit": "residents",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.0005125999450683594
+    },
+    {
+      "round": 1,
+      "id": "call_kQaVxbrVVCuzJAcHyWjVrigc",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2020\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "population_2020",
+        "value": 83609,
+        "unit": "residents",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.0003026999766007066
+    },
+    {
+      "round": 1,
+      "id": "call_wJdFDJXHb0wy8FLnPskhXTOd",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "population_2025",
+        "value": 90212,
+        "unit": "residents",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.00026239996077492833
+    },
+    {
+      "round": 2,
+      "id": "call_SbdCWlvEhKzyl4lPm32aM7jc",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"(71388-67214)/67214*100\"}",
+      "result": {
+        "result": 6.210015770523998
+      },
+      "seconds": 0.00015569996321573853
+    },
+    {
+      "round": 2,
+      "id": "call_SBVKJausFpFdCZvnRpcuvTyL",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"(90212-83609)/83609*100\"}",
+      "result": {
+        "result": 7.8974751521965345
+      },
+      "seconds": 6.389996269717813e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

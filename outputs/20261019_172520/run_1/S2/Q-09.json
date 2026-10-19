@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-09",
+  "question": "Which district has the higher population density in 2025, Brightwater or Millbrook, and by how many residents per square kilometre?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: millbrook | 0.6",
+  "parsed": {
+    "name": "millbrook",
+    "value": 0.6
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11105,
+  "output_tokens": 480,
+  "total_seconds": 8.309180499985814,
+  "samples": [
+    {
+      "answer": "Brightwater density: \\(44,675 \\div 921.4 = 48.5\\) residents/km².  \nMillbrook density: \\(37,203 \\div 758.6 = 49.0\\) residents/km².  \nMillbrook is higher by \\(49.0 - 48.5 = 0.5\\) residents/km².\n\nANSWER: Millbrook | 0.5",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 0.5
+      },
+      "input_tokens": 2221,
+      "output_tokens": 89,
+      "seconds": 1.531714400043711
+    },
+    {
+      "answer": "Brightwater density: \\(44,675 \\div 921.4 = 48.5\\) residents/km².  \nMillbrook density: \\(37,203 \\div 758.6 = 49.1\\) residents/km².  \n\nMillbrook has the higher population density by \\(49.1 - 48.5 = 0.6\\) residents/km².\n\nANSWER: Millbrook | 0.6",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 0.6
+      },
+      "input_tokens": 2221,
+      "output_tokens": 92,
+      "seconds": 1.7586754000512883
+    },
+    {
+      "answer": "Brightwater density = 44,675 ÷ 921.4 = 48.4816 residents/km².\n\nMillbrook density = 37,203 ÷ 758.6 = 49.0535 residents/km².\n\nMillbrook has the higher population density by 49.0535 − 48.4816 = 0.5719, which rounds to 0.6 residents/km².\n\nANSWER: Millbrook | 0.6",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 0.6
+      },
+      "input_tokens": 2221,
+      "output_tokens": 97,
+      "seconds": 1.7430652999901213
+    },
+    {
+      "answer": "Brightwater density = 44,675 ÷ 921.4 = 48.4828 residents/km².  \nMillbrook density = 37,203 ÷ 758.6 = 49.0535 residents/km².  \n\nMillbrook has the higher population density by 49.0535 − 48.4828 = 0.5707, rounded to 0.6 residents/km².\n\nANSWER: Millbrook | 0.6",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 0.6
+      },
+      "input_tokens": 2221,
+      "output_tokens": 98,
+      "seconds": 1.6368286000215448
+    },
+    {
+      "answer": "Brightwater density: \\(44,675 \\div 921.4 = 48.4827\\) residents/km².  \nMillbrook density: \\(37,203 \\div 758.6 = 49.0535\\) residents/km².  \n\nMillbrook has the higher population density by \\(49.0535 - 48.4827 = 0.5708\\), which rounds to 0.6 residents/km².\n\nANSWER: Millbrook | 0.6",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 0.6
+      },
+      "input_tokens": 2221,
+      "output_tokens": 104,
+      "seconds": 1.638616300013382
+    }
+  ],
+  "votes_for_winner": 4,
+  "correct": true,
+  "error": null
+}

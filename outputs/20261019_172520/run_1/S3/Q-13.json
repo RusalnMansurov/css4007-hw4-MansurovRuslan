@@ -1,0 +1,147 @@
+{
+  "question_id": "Q-13",
+  "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Coldharbour lost the largest percentage of its population: 4.16% (495 residents).\n\nANSWER: Coldharbour | 4.16",
+  "parsed": {
+    "name": "Coldharbour",
+    "value": 4.16
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2296,
+  "output_tokens": 274,
+  "total_seconds": 5.047500799992122,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_nMoWycFLHbhhpzC9wyjkN5EX",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2020\"}",
+      "result": {
+        "district": "Ossford",
+        "field": "population_2020",
+        "value": 31560,
+        "unit": "residents",
+        "sources": [
+          "NR-02"
+        ]
+      },
+      "seconds": 0.0002832000027410686
+    },
+    {
+      "round": 1,
+      "id": "call_SXCtNpTzGLcV0FJ4xGyRAsSC",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ossford",
+        "field": "population_2025",
+        "value": 30982,
+        "unit": "residents",
+        "sources": [
+          "NR-02"
+        ]
+      },
+      "seconds": 0.00017720001051202416
+    },
+    {
+      "round": 1,
+      "id": "call_5zm2HTJtIM8P9fmdMMGKEIho",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2020\"}",
+      "result": {
+        "district": "Stonecairn",
+        "field": "population_2020",
+        "value": 15473,
+        "unit": "residents",
+        "sources": [
+          "NR-06"
+        ]
+      },
+      "seconds": 0.00015310000162571669
+    },
+    {
+      "round": 1,
+      "id": "call_K9kckmy6CWPd6qlAdfpBXIDb",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Stonecairn",
+        "field": "population_2025",
+        "value": 14926,
+        "unit": "residents",
+        "sources": [
+          "NR-06"
+        ]
+      },
+      "seconds": 0.0001362999901175499
+    },
+    {
+      "round": 1,
+      "id": "call_OojC32KYXEJDazIC6651zS9z",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2020\"}",
+      "result": {
+        "district": "Coldharbour",
+        "field": "population_2020",
+        "value": 11902,
+        "unit": "residents",
+        "sources": [
+          "NR-12"
+        ]
+      },
+      "seconds": 0.00012729997979477048
+    },
+    {
+      "round": 1,
+      "id": "call_TXDXCLTdT0v6KzHhl0IhWug9",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Coldharbour",
+        "field": "population_2025",
+        "value": 11407,
+        "unit": "residents",
+        "sources": [
+          "NR-12"
+        ]
+      },
+      "seconds": 0.00018229999113827944
+    },
+    {
+      "round": 2,
+      "id": "call_flPURVUMEoYqYRcQqSKweIda",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"(31560-30982)/31560*100\"}",
+      "result": {
+        "result": 1.8314321926489228
+      },
+      "seconds": 0.00015929999062791467
+    },
+    {
+      "round": 2,
+      "id": "call_Tlwmdxgjlwhjsu3XNvs4Mlwm",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"(15473-14926)/15473*100\"}",
+      "result": {
+        "result": 3.535190331545272
+      },
+      "seconds": 6.910000229254365e-05
+    },
+    {
+      "round": 2,
+      "id": "call_WuUNBi8H3MjoFdddzAZz7lkO",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"(11902-11407)/11902*100\"}",
+      "result": {
+        "result": 4.1589648798521255
+      },
+      "seconds": 5.730002885684371e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

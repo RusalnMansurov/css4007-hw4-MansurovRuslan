@@ -1,0 +1,157 @@
+{
+  "question_id": "Q-20",
+  "question": "Of Ossbridge, Ashgrove and Harrowfield, which district had the largest 2025 budget per resident, and by how many tenge per resident did it exceed the lowest of the three?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Ashgrove had the largest 2025 budget per resident, exceeding Ossbridge, the lowest, by 2,993 tenge per resident.\n\nANSWER: Ashgrove | 2993",
+  "parsed": {
+    "name": "Ashgrove",
+    "value": 2993.0
+  },
+  "unanswered": false,
+  "rounds": 4,
+  "input_tokens": 3435,
+  "output_tokens": 323,
+  "total_seconds": 7.681911599996965,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_bch2S9eOAUGtf6JQ1uTSudGh",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "budget_2025_million_tenge",
+        "value": 9284.5,
+        "unit": "million tenge",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00041959999362006783
+    },
+    {
+      "round": 1,
+      "id": "call_qH3rQgSRIeFtE74l2tlUIqlx",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "population_2025",
+        "value": 52904,
+        "unit": "residents",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00047769997036084533
+    },
+    {
+      "round": 1,
+      "id": "call_InL8x3O1YD8B5kxCseU01ek2",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "budget_2025_million_tenge",
+        "value": 10488.1,
+        "unit": "million tenge",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.00020929996389895678
+    },
+    {
+      "round": 1,
+      "id": "call_IbOchRjD5iF34YhvTTtev9Mf",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "population_2025",
+        "value": 58760,
+        "unit": "residents",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.0001433999859727919
+    },
+    {
+      "round": 1,
+      "id": "call_Ll3NYiLEWyrRAogImITbAmMn",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "budget_2025_million_tenge",
+        "value": 16021.7,
+        "unit": "million tenge",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.00012390001211315393
+    },
+    {
+      "round": 1,
+      "id": "call_tWQCzQ09xD2SqbIj2WrtqAPH",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "population_2025",
+        "value": 90212,
+        "unit": "residents",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.0001235000090673566
+    },
+    {
+      "round": 2,
+      "id": "call_9ndiSy8c6rlz7FcS2VVjqd0I",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"9284.5*1000000/52904\"}",
+      "result": {
+        "result": 175497.12687131407
+      },
+      "seconds": 6.40999642200768e-05
+    },
+    {
+      "round": 2,
+      "id": "call_XxpIgzPeWn5vDlfdENVqLMqm",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"10488.1*1000000/58760\"}",
+      "result": {
+        "result": 178490.46970728386
+      },
+      "seconds": 2.3600005079060793e-05
+    },
+    {
+      "round": 2,
+      "id": "call_H66gbdFlWsbyCEYG3vQtwEzo",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"16021.7*1000000/90212\"}",
+      "result": {
+        "result": 177600.54094798918
+      },
+      "seconds": 1.8000020645558834e-05
+    },
+    {
+      "round": 3,
+      "id": "call_I9B0BwLSJkrlLis3QwKg7MGL",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"178490.46970728386-175497.12687131407\"}",
+      "result": {
+        "result": 2993.3428359697864
+      },
+      "seconds": 0.00011880003148689866
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-13",
+  "question": "Ossford, Stonecairn and Coldharbour all lost population between the 2020 and 2025 censuses. Which lost the largest percentage, and what was that percentage?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: coldharbour | 4.16",
+  "parsed": {
+    "name": "coldharbour",
+    "value": 4.16
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11160,
+  "output_tokens": 587,
+  "total_seconds": 9.927995799982455,
+  "samples": [
+    {
+      "answer": "Ossford: \\((31,560 - 30,982) / 31,560 \\times 100 = 1.8327\\%\\).\n\nStonecairn: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.5346\\%\\).\n\nColdharbour: \\((11,902 - 11,407) / 11,902 \\times 100 = 4.1581\\%\\).\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 4.16
+      },
+      "input_tokens": 2232,
+      "output_tokens": 121,
+      "seconds": 2.0417503000353463
+    },
+    {
+      "answer": "Population percentage loss:\n\n- Ossford: \\((31,560 - 30,982) / 31,560 \\times 100 = 1.83\\%\\)\n- Stonecairn: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.53\\%\\)\n- Coldharbour: \\((11,902 - 11,407) / 11,902 \\times 100 = 4.16\\%\\)\n\nColdharbour lost the largest percentage.\n\nANSWER: Coldharbour | 4.16",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 4.16
+      },
+      "input_tokens": 2232,
+      "output_tokens": 124,
+      "seconds": 2.2049084000173025
+    },
+    {
+      "answer": "Ossford: percentage loss = (31,560 − 30,982) ÷ 31,560 × 100 = 1.8327%.\n\nStonecairn: percentage loss = (15,473 − 14,926) ÷ 15,473 × 100 = 3.5343%.\n\nColdharbour: percentage loss = (11,902 − 11,407) ÷ 11,902 × 100 = 4.1581%.\n\nColdharbour had the largest percentage loss.\n\nANSWER: Coldharbour | 4.16",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 4.16
+      },
+      "input_tokens": 2232,
+      "output_tokens": 122,
+      "seconds": 1.9900970000308007
+    },
+    {
+      "answer": "Ossford: \\((31,560-30,982)/31,560 \\times 100 = 1.8314\\%\\)\n\nStonecairn: \\((15,473-14,926)/15,473 \\times 100 = 3.5346\\%\\)\n\nColdharbour: \\((11,902-11,407)/11,902 \\times 100 = 4.1581\\%\\)\n\nColdharbour had the largest percentage population loss.\n\nANSWER: Coldharbour | 4.16",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 4.16
+      },
+      "input_tokens": 2232,
+      "output_tokens": 114,
+      "seconds": 1.8141249000327662
+    },
+    {
+      "answer": "Ossford lost 578 residents, or \\(578/31,560 \\times 100 = 1.83\\%\\).\n\nStonecairn lost 547 residents, or \\(547/15,473 \\times 100 = 3.54\\%\\).\n\nColdharbour lost 495 residents, or \\(495/11,902 \\times 100 = 4.16\\%\\).\n\nColdharbour therefore had the largest percentage population loss.\n\nANSWER: Coldharbour | 4.16",
+      "parsed": {
+        "name": "Coldharbour",
+        "value": 4.16
+      },
+      "input_tokens": 2232,
+      "output_tokens": 106,
+      "seconds": 1.8768340999959037
+    }
+  ],
+  "votes_for_winner": 5,
+  "correct": true,
+  "error": null
+}

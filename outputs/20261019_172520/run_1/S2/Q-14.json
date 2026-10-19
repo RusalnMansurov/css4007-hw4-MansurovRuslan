@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-14",
+  "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: ashgrove | 4.8",
+  "parsed": {
+    "name": "ashgrove",
+    "value": 4.8
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11135,
+  "output_tokens": 736,
+  "total_seconds": 10.025773499975912,
+  "samples": [
+    {
+      "answer": "Tarnvale: 5,207 ML = 5,207,000,000 L; \\(5,207,000,000/(71,388 \\times 365)=199.8\\) L/resident/day.\n\nAshgrove: 4,390 ML = 4,390,000,000 L; \\(4,390,000,000/(58,760 \\times 365)=204.6\\) L/resident/day.\n\nDifference: \\(204.6-199.8=4.8\\) L/resident/day.\n\nANSWER: Ashgrove | 4.8",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 4.8
+      },
+      "input_tokens": 2227,
+      "output_tokens": 128,
+      "seconds": 1.8439613999798894
+    },
+    {
+      "answer": "Tarnvale:  \n- Water per resident per day = \\(5{,}207{,}000 \\div 71{,}388 \\div 365 = 0.1998\\) m³ = **199.8 litres**\n- Ashgrove: \\(4{,}390{,}000 \\div 58{,}760 \\div 365 = 0.2046\\) m³ = **204.6 litres**\n- Difference: \\(204.6 - 199.8 = 4.8\\) litres per resident per day\n\nANSWER: Ashgrove | 4.8",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 4.8
+      },
+      "input_tokens": 2227,
+      "output_tokens": 133,
+      "seconds": 1.9575796999852173
+    },
+    {
+      "answer": "Tarnvale: 5,207 ML = 5,207,000,000 L; per resident per day = 5,207,000,000 ÷ (71,388 × 365) = 199.8 L.\n\nAshgrove: 4,390 ML = 4,390,000,000 L; per resident per day = 4,390,000,000 ÷ (58,760 × 365) = 204.6 L.\n\nDifference = 204.6 − 199.8 = 4.8 L per resident per day.\n\nANSWER: Ashgrove | 4.8",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 4.8
+      },
+      "input_tokens": 2227,
+      "output_tokens": 135,
+      "seconds": 2.0256761999917217
+    },
+    {
+      "answer": "Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L.\n\n\\[\n\\frac{5{,}207{,}000{,}000}{71{,}388 \\times 365}\n=199.8\\text{ L/resident/day}\n\\]\n\nAshgrove:\n\n\\[\n\\frac{4{,}390{,}000{,}000}{58{,}760 \\times 365}\n=204.7\\text{ L/resident/day}\n\\]\n\nDifference:\n\n\\[\n204.7-199.8=4.9\\text{ L/resident/day}\n\\]\n\nANSWER: Ashgrove | 4.9",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 4.9
+      },
+      "input_tokens": 2227,
+      "output_tokens": 161,
+      "seconds": 2.1507836999953724
+    },
+    {
+      "answer": "Tarnvale:  \n- Water use per resident per day = \\(5{,}207{,}000 \\div 71{,}388 \\div 365 = 0.1998\\) cubic metres  \n- \\(0.1998 \\times 1{,}000 = 199.8\\) litres\n\nAshgrove:  \n- Water use per resident per day = \\(4{,}390{,}000 \\div 58{,}760 \\div 365 = 0.2046\\) cubic metres  \n- \\(0.2046 \\times 1{,}000 = 204.6\\) litres\n\nAshgrove used more by \\(204.6 - 199.8 = 4.8\\) litres per resident per day.\n\nANSWER: Ashgrove | 4.8",
+      "parsed": {
+        "name": "Ashgrove",
+        "value": 4.8
+      },
+      "input_tokens": 2227,
+      "output_tokens": 179,
+      "seconds": 2.047511000011582
+    }
+  ],
+  "votes_for_winner": 4,
+  "correct": true,
+  "error": null
+}

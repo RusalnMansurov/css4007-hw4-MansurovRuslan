@@ -1,0 +1,16 @@
+{
+  "run": 1,
+  "strategy": "S3_vague",
+  "questions": 2,
+  "correct": 1,
+  "unanswered": 0,
+  "input_tokens": 3682,
+  "output_tokens": 377,
+  "median_seconds_per_question": 5.9363346000318415,
+  "total_seconds": 11.872669200063683,
+  "cost_usd": null,
+  "per_question": {
+    "Q-05": true,
+    "Q-14": false
+  }
+}

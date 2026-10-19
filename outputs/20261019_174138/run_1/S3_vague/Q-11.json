@@ -1,0 +1,127 @@
+{
+  "question_id": "Q-11",
+  "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+  "strategy": "S3-vague",
+  "model": "gpt-5.6-luna",
+  "answer": "Ashgrove: 368.21 pupils per school; Redfen has the fewest at 314.70. The difference between the highest and lowest is 53.51 pupils per school.\n\nANSWER: Redfen | 53.51",
+  "parsed": {
+    "name": "Redfen",
+    "value": 53.51
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2119,
+  "output_tokens": 242,
+  "total_seconds": 4.933778300008271,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_ZfU6ZtKhW9qoxCLy4OdQx790",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "pupils_2025_26",
+        "value": 3147,
+        "unit": "pupils",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.0010927999974228442
+    },
+    {
+      "round": 1,
+      "id": "call_HqQxxKqueEi3aNESiFGkOumq",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "schools_2025_26",
+        "value": 10,
+        "unit": "schools",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.000757400004658848
+    },
+    {
+      "round": 1,
+      "id": "call_2DMbNkXC8RLrixvehUXri4ZV",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "pupils_2025_26",
+        "value": 8837,
+        "unit": "pupils",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.00028959999326616526
+    },
+    {
+      "round": 1,
+      "id": "call_kFORVOfTkRAEUAGB5j52h6uU",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "schools_2025_26",
+        "value": 24,
+        "unit": "schools",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.00026490003801882267
+    },
+    {
+      "round": 1,
+      "id": "call_AzlClqKAJBR6tkIX6BDFZ6tu",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "pupils_2025_26",
+        "value": 5562,
+        "unit": "pupils",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.00023179996060207486
+    },
+    {
+      "round": 1,
+      "id": "call_TAFoKnJuPXbuDy3CDGDSUqjx",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "schools_2025_26",
+        "value": 15,
+        "unit": "schools",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.00021820003166794777
+    },
+    {
+      "round": 2,
+      "id": "call_oVltj1sUpEKQDNFdPJpTN3Ux",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"8837/24 - 3147/10\"}",
+      "result": {
+        "result": 53.508333333333326
+      },
+      "seconds": 0.00012829998740926385
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": false,
+  "error": null
+}

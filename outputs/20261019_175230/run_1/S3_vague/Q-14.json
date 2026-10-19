@@ -1,0 +1,95 @@
+{
+  "question_id": "Q-14",
+  "question": "In 2025, which district's households used more water per resident per day, Tarnvale or Ashgrove, and by how many litres per resident per day?",
+  "strategy": "S3-vague",
+  "model": "gpt-5.6-luna",
+  "answer": "Ashgrove used more water: 1,771.3 litres per resident per day more than Tarnvale.\n\nANSWER: Ashgrove | 1771.3",
+  "parsed": {
+    "name": "Ashgrove",
+    "value": 1771.3
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 1833,
+  "output_tokens": 184,
+  "total_seconds": 5.321990300028119,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_ITOfPAD2Fw5wM8ebs7n3sxY1",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "water_2025_m3",
+        "value": 5207000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.0010646000155247748
+    },
+    {
+      "round": 1,
+      "id": "call_gCChRQSRd3AGdJzaZKUdZ6XQ",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Tarnvale",
+        "field": "population_2025",
+        "value": 71388,
+        "unit": "residents",
+        "sources": [
+          "NR-03"
+        ]
+      },
+      "seconds": 0.0003302000113762915
+    },
+    {
+      "round": 1,
+      "id": "call_1TpHImSHmWQByet1KE6Y1imX",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "water_2025_m3",
+        "value": 4390000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.000248399970587343
+    },
+    {
+      "round": 1,
+      "id": "call_9PjPGfUWYqanuQvcLVw2wsMB",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "population_2025",
+        "value": 58760,
+        "unit": "residents",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.00024130003293976188
+    },
+    {
+      "round": 2,
+      "id": "call_1WuvFQDi7Z5p9VgunSNwAjVd",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"(5207000/71388*1000)-(4390000/58760*1000)\"}",
+      "result": {
+        "result": -1771.257946535421
+      },
+      "seconds": 0.00016150000737980008
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": false,
+  "error": null
+}

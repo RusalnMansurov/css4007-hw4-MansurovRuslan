@@ -1,0 +1,95 @@
+{
+  "question_id": "Q-05",
+  "question": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?",
+  "strategy": "S3-vague",
+  "model": "gpt-5.6-luna",
+  "answer": "Coldharbour had the larger 2025 budget per resident, by approximately 14,235 tenge per resident.\n\nANSWER: Coldharbour | 14235",
+  "parsed": {
+    "name": "Coldharbour",
+    "value": 14235.0
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 1849,
+  "output_tokens": 193,
+  "total_seconds": 6.550678900035564,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_OPoTLfQs0YRwce7mMwbihRnG",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Stonecairn",
+        "field": "budget_2025_million_tenge",
+        "value": 2884.6,
+        "unit": "million tenge",
+        "sources": [
+          "NR-06"
+        ]
+      },
+      "seconds": 0.0019558000494726002
+    },
+    {
+      "round": 1,
+      "id": "call_9RcTorVmVm0VUTfpY71wiytP",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Stonecairn",
+        "field": "population_2025",
+        "value": 14926,
+        "unit": "residents",
+        "sources": [
+          "NR-06"
+        ]
+      },
+      "seconds": 0.0008442000253126025
+    },
+    {
+      "round": 1,
+      "id": "call_ykMlnWhxNPcfcTbapGtwqp1z",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"budget_2025_million_tenge\"}",
+      "result": {
+        "district": "Coldharbour",
+        "field": "budget_2025_million_tenge",
+        "value": 2366.9,
+        "unit": "million tenge",
+        "sources": [
+          "NR-12"
+        ]
+      },
+      "seconds": 0.00022470002295449376
+    },
+    {
+      "round": 1,
+      "id": "call_yt46zkzmLlEsNRFFlxIw3CXQ",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Coldharbour",
+        "field": "population_2025",
+        "value": 11407,
+        "unit": "residents",
+        "sources": [
+          "NR-12"
+        ]
+      },
+      "seconds": 0.00017680000746622682
+    },
+    {
+      "round": 2,
+      "id": "call_s5zlZmyH4Zy3yLxPsuR14ovN",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"(2884.6*1000000/14926)-(2366.9*1000000/11407)\"}",
+      "result": {
+        "result": -14235.314486389194
+      },
+      "seconds": 0.003263799997512251
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

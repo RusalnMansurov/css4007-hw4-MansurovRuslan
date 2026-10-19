@@ -1,0 +1,95 @@
+{
+  "question_id": "Q-08",
+  "question": "At the 2025 household water tariff, whose households paid more for water in 2025, Brightwater's or Millbrook's, and by how many million tenge?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Brightwater's households paid more, by 72.46 million tenge.\n\nANSWER: Brightwater | 72.46",
+  "parsed": {
+    "name": "Brightwater",
+    "value": 72.46
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2026,
+  "output_tokens": 185,
+  "total_seconds": 4.723800099978689,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_54kIZUMVA3ZoF9x58aTxSb7A",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Brightwater\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Brightwater",
+        "field": "water_2025_m3",
+        "value": 3315000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-05"
+        ]
+      },
+      "seconds": 0.0007512000156566501
+    },
+    {
+      "round": 1,
+      "id": "call_dsefYVmFl7X1kgmfdJXeZxvr",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Brightwater\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Brightwater",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.000742600008379668
+    },
+    {
+      "round": 1,
+      "id": "call_OOdXvmC7kY7FTGGca2fcLsRe",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "water_2025_m3",
+        "value": 2806000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.0004113999893888831
+    },
+    {
+      "round": 1,
+      "id": "call_Kpe7sSLnkjdvuklkIXnGhvgz",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.00029669998912140727
+    },
+    {
+      "round": 2,
+      "id": "call_LOrb0ssXyXSfemCnMFO96i0T",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"(3315000*142.35 - 2806000*142.35)/1000000\"}",
+      "result": {
+        "result": 72.45615
+      },
+      "seconds": 0.00013780000153928995
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

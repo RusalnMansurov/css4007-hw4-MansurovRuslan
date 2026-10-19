@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: harrowfield | 885",
+  "parsed": {
+    "name": "harrowfield",
+    "value": 885.0
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11165,
+  "output_tokens": 840,
+  "total_seconds": 14.944090300006792,
+  "samples": [
+    {
+      "answer": "Harrowfield's households paid more per resident.\n\nHarrowfield: \\(7,146,000\\text{ m}^3 \\times 142.35 \\div 90,212 = 11,277.35\\) tenge per resident.  \nOssbridge: \\(3,862,000\\text{ m}^3 \\times 142.35 \\div 52,904 = 10,391.91\\) tenge per resident.  \nDifference: \\(11,277.35 - 10,391.91 = 885.44\\) tenge, rounded to 0 decimals.\n\nANSWER: Harrowfield | 885",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 885.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 140,
+      "seconds": 2.6061037000035867
+    },
+    {
+      "answer": "Harrowfield used 7,146 ML = 7,146,000 m³.  \nCost per resident = 7,146,000 × 142.35 ÷ 90,212 = 11,281.84 tenge.\n\nOssbridge used 3,862 ML = 3,862,000 m³.  \nCost per resident = 3,862,000 × 142.35 ÷ 52,904 = 10,391.84 tenge.\n\nDifference = 11,281.84 − 10,391.84 = 890.00 tenge per resident.\n\nANSWER: Harrowfield | 890",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 890.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 138,
+      "seconds": 2.3595823000068776
+    },
+    {
+      "answer": "Harrowfield households paid more.\n\nHarrowfield: 7,146 ML × 1,000 × 142.35 ÷ 90,212 = 11,278.30 tenge per resident.  \nOssbridge: 3,862 ML × 1,000 × 142.35 ÷ 52,904 = 10,391.65 tenge per resident.  \nDifference: 886.65 tenge, rounded to 887.\n\nANSWER: Harrowfield | 887",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 887.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 108,
+      "seconds": 2.180031500000041
+    },
+    {
+      "answer": "Harrowfield: 7,146 ML = 7,146,000 m³; 7,146,000 × 142.35 = 1,017,? Wait: 7,146,000 × 142.35 = 1,017,? 142.35 × 7,146 = 1,017,?  \n142.35 × 7,000 = 996,450  \n142.35 × 146 = 20,? 142.35 × 146 = 20,783.1  \nTotal = 1,017,233.1 thousand tenge = 1,017,233,100 tenge.  \nPer resident = 1,017,233,100 ÷ 90,212 = 11,276.68 tenge.\n\nOssbridge: 3,862 ML = 3,862,000 m³; 3,862,000 × 142.35 = 549,?  \n142.35 × 3,862 = 549,? 142.35 × 3,800 = 541,? 142.35 × 3,800 = 540,930; ×62 = 8,825.7; total = 549,755.7 thousand tenge = 549,755,700 tenge.  \nPer resident = 549,755,700 ÷ 52,904 = 10,391.68 tenge.\n\nDifference = 11,276.68 − 10,391.68 = 885.00 tenge per resident.\n\nANSWER: Harrowfield | 885",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 885.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 338,
+      "seconds": 5.809355500037782
+    },
+    {
+      "answer": "Harrowfield's per-resident water cost is:\n\n7,146,000 m³ × 142.35 ÷ 90,212 = 11,276.96 tenge\n\nOssbridge's per-resident water cost is:\n\n3,862,000 m³ × 142.35 ÷ 52,904 = 10,390.36 tenge\n\nDifference:\n\n11,276.96 − 10,390.36 = 886.60 tenge, rounded to 887.\n\nANSWER: Harrowfield | 887",
+      "parsed": {
+        "name": "Harrowfield",
+        "value": 887.0
+      },
+      "input_tokens": 2233,
+      "output_tokens": 116,
+      "seconds": 1.9887331000063568
+    }
+  ],
+  "votes_for_winner": 2,
+  "correct": true,
+  "error": null
+}

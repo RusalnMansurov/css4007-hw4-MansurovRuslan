@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield | 15.93 tenge per resident more\n\nANSWER: Harrowfield | 16",
+  "parsed": {
+    "name": "Harrowfield",
+    "value": 16.0
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2224,
+  "output_tokens": 25,
+  "total_seconds": 1.1656026000273414,
+  "seconds": 1.1656026000273414,
+  "correct": false,
+  "error": null
+}

@@ -1,0 +1,157 @@
+{
+  "question_id": "Q-11",
+  "question": "Of Redfen, Ashgrove and Millbrook, which district has the fewest pupils per school in 2025/26, and how many pupils per school separate the highest of the three from the lowest?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Ashgrove has the fewest pupils per school, at 368.21 pupils per school. The highest (Millbrook, 370.80) exceeds the lowest by 2.59 pupils per school.\n\nANSWER: Ashgrove | 2.59",
+  "parsed": {
+    "name": "Ashgrove",
+    "value": 2.59
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2352,
+  "output_tokens": 309,
+  "total_seconds": 5.518465500033926,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_1iFcHkNvHHGqFgR2qymxDXAo",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "pupils_2025_26",
+        "value": 3147,
+        "unit": "pupils",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.0034599999780766666
+    },
+    {
+      "round": 1,
+      "id": "call_r2RfQEudJzIMfhBpbAAwzD1f",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "schools_2025_26",
+        "value": 10,
+        "unit": "schools",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.0015338999801315367
+    },
+    {
+      "round": 1,
+      "id": "call_3AiyRnIsDMHkZXAYBRu4Ma6Q",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "pupils_2025_26",
+        "value": 8837,
+        "unit": "pupils",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.0003443000023253262
+    },
+    {
+      "round": 1,
+      "id": "call_KQPGO3s89D1fk98I5a0ZILTi",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Ashgrove",
+        "field": "schools_2025_26",
+        "value": 24,
+        "unit": "schools",
+        "sources": [
+          "NR-10"
+        ]
+      },
+      "seconds": 0.0005367000121623278
+    },
+    {
+      "round": 1,
+      "id": "call_TLqzOIonxwnsu6C9XE3ZyrWF",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "pupils_2025_26",
+        "value": 5562,
+        "unit": "pupils",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.001853400026448071
+    },
+    {
+      "round": 1,
+      "id": "call_5Bv6VKfu7W9aIAt6WYr1X7wm",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Millbrook",
+        "field": "schools_2025_26",
+        "value": 15,
+        "unit": "schools",
+        "sources": [
+          "NR-11"
+        ]
+      },
+      "seconds": 0.0018724999972619116
+    },
+    {
+      "round": 2,
+      "id": "call_V8VgbpFqiERISWWe6Up2Y6ez",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"3147/10\"}",
+      "result": {
+        "result": 314.7
+      },
+      "seconds": 0.00011490000179037452
+    },
+    {
+      "round": 2,
+      "id": "call_DgFRvOba3oqinIQ85NuHXrFD",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"8837/24\"}",
+      "result": {
+        "result": 368.2083333333333
+      },
+      "seconds": 4.099996294826269e-05
+    },
+    {
+      "round": 2,
+      "id": "call_yfjPL2s7hT7T3zvG6w78r6V2",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"5562/15\"}",
+      "result": {
+        "result": 370.8
+      },
+      "seconds": 3.189995186403394e-05
+    },
+    {
+      "round": 2,
+      "id": "call_rU7gtiLbWhkQoAA3PLPvsbel",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"8837/24-3147/10\"}",
+      "result": {
+        "result": 53.508333333333326
+      },
+      "seconds": 4.970002919435501e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": false,
+  "error": null
+}

@@ -1,0 +1,115 @@
+{
+  "question_id": "Q-15",
+  "question": "Which district has more pupils per school in 2025/26, Kelmarsh or Redfen, and by how many pupils per school?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Redfen has more pupils per school: 314.70 compared with Kelmarsh’s 297.09, a difference of 17.61 pupils per school.\n\nANSWER: Redfen | 17.61",
+  "parsed": {
+    "name": "Redfen",
+    "value": 17.61
+  },
+  "unanswered": false,
+  "rounds": 4,
+  "input_tokens": 2857,
+  "output_tokens": 238,
+  "total_seconds": 6.639165900007356,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_fCYHYu9vOgiFvgqQGkiMGyxu",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Kelmarsh",
+        "field": "pupils_2025_26",
+        "value": 3268,
+        "unit": "pupils",
+        "sources": [
+          "NR-04"
+        ]
+      },
+      "seconds": 0.0006695999763906002
+    },
+    {
+      "round": 1,
+      "id": "call_b0siUq9ajrG42KMg5aPRogQq",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Kelmarsh",
+        "field": "schools_2025_26",
+        "value": 11,
+        "unit": "schools",
+        "sources": [
+          "NR-04"
+        ]
+      },
+      "seconds": 0.0003695999621413648
+    },
+    {
+      "round": 1,
+      "id": "call_HWWWKEy4BdnMNFmXXBxzcqY5",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "pupils_2025_26",
+        "value": 3147,
+        "unit": "pupils",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.00032980000833049417
+    },
+    {
+      "round": 1,
+      "id": "call_YKMGw9OhAo5cPMdWHxzxW7ns",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Redfen\", \"field\": \"schools_2025_26\"}",
+      "result": {
+        "district": "Redfen",
+        "field": "schools_2025_26",
+        "value": 10,
+        "unit": "schools",
+        "sources": [
+          "NR-09"
+        ]
+      },
+      "seconds": 0.0004792999825440347
+    },
+    {
+      "round": 2,
+      "id": "call_gwpk8G1nnI10ntPsHZUpXQ4m",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"3268/11\"}",
+      "result": {
+        "result": 297.09090909090907
+      },
+      "seconds": 0.00011010002344846725
+    },
+    {
+      "round": 2,
+      "id": "call_s7jAmQYdBPsNRXZ1ES3wss6S",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"3147/10\"}",
+      "result": {
+        "result": 314.7
+      },
+      "seconds": 4.710000939667225e-05
+    },
+    {
+      "round": 3,
+      "id": "call_n311yhaNkilb783u7iPe5yux",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"314.7-(3268/11)\"}",
+      "result": {
+        "result": 17.609090909090924
+      },
+      "seconds": 0.00013770000077784061
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

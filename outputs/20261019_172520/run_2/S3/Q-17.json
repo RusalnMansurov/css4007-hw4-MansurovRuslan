@@ -1,0 +1,137 @@
+{
+  "question_id": "Q-17",
+  "question": "At the 2025 household water tariff, which district's households paid more for water per resident in 2025, Harrowfield or Ossbridge, and by how many tenge per resident?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield households paid more: 884.457162196877 tenge per resident, or 884 tenge rounded to the nearest whole tenge.\n\nANSWER: Harrowfield | 884",
+  "parsed": {
+    "name": "Harrowfield",
+    "value": 884.0
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 2348,
+  "output_tokens": 275,
+  "total_seconds": 5.168147600023076,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_xIBGkK7qeRAKhQ2f3WcMtqOz",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.0004018000327050686
+    },
+    {
+      "round": 1,
+      "id": "call_o1tKrzk9GadBjb9ZACBiNNov",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "water_2025_m3",
+        "value": 7146000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.00021670002024620771
+    },
+    {
+      "round": 1,
+      "id": "call_TfGzrxN3xOvcn842egYSmF2J",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Harrowfield",
+        "field": "population_2025",
+        "value": 90212,
+        "unit": "residents",
+        "sources": [
+          "NR-07"
+        ]
+      },
+      "seconds": 0.00015520001761615276
+    },
+    {
+      "round": 1,
+      "id": "call_Az51uf69KXzupCLG8Z5802GG",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"water_tariff_2025_tenge_per_m3\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "water_tariff_2025_tenge_per_m3",
+        "value": 142.35,
+        "unit": "tenge/m3",
+        "sources": [
+          "NR-15"
+        ]
+      },
+      "seconds": 0.0001385000068694353
+    },
+    {
+      "round": 1,
+      "id": "call_CfHQdmLO2JujD21ccI8djRik",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"water_2025_m3\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "water_2025_m3",
+        "value": 3862000.0,
+        "unit": "m3",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00013590004527941346
+    },
+    {
+      "round": 1,
+      "id": "call_V55QjwSE2WxsP70gfJIVk2Y7",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+      "result": {
+        "district": "Ossbridge",
+        "field": "population_2025",
+        "value": 52904,
+        "unit": "residents",
+        "sources": [
+          "NR-01"
+        ]
+      },
+      "seconds": 0.00015659997006878257
+    },
+    {
+      "round": 2,
+      "id": "call_ezWW1Gf0XdxlVOQWwcZxF834",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"7146000*142.35/90212\"}",
+      "result": {
+        "result": 11276.028687979426
+      },
+      "seconds": 0.0001294999965466559
+    },
+    {
+      "round": 2,
+      "id": "call_0yRuZmk9rSDqEf4U8eAQ5liM",
+      "name": "calculate",
+      "arguments": "{\"expression\": \"3862000*142.35/52904\"}",
+      "result": {
+        "result": 10391.571525782549
+      },
+      "seconds": 5.8800040278583765e-05
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

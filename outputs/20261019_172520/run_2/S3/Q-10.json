@@ -1,0 +1,63 @@
+{
+  "question_id": "Q-10",
+  "question": "Which district is older, Stonecairn or Coldharbour, and how many years older is it than the other?",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8",
+  "parsed": {
+    "name": "Stonecairn",
+    "value": 8.0
+  },
+  "unanswered": false,
+  "rounds": 3,
+  "input_tokens": 1638,
+  "output_tokens": 105,
+  "total_seconds": 3.976690800045617,
+  "tool_calls": [
+    {
+      "round": 1,
+      "id": "call_o67GoT588xZoXfD3OsXEzqx1",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Stonecairn\", \"field\": \"founded_year\"}",
+      "result": {
+        "district": "Stonecairn",
+        "field": "founded_year",
+        "value": 1837,
+        "unit": "year",
+        "sources": [
+          "NR-06"
+        ]
+      },
+      "seconds": 0.00029749999521300197
+    },
+    {
+      "round": 1,
+      "id": "call_nVUpgrAw3gWVaffZ5XpQ2OFi",
+      "name": "lookup",
+      "arguments": "{\"district\": \"Coldharbour\", \"field\": \"founded_year\"}",
+      "result": {
+        "district": "Coldharbour",
+        "field": "founded_year",
+        "value": 1845,
+        "unit": "year",
+        "sources": [
+          "NR-12"
+        ]
+      },
+      "seconds": 0.00016329996287822723
+    },
+    {
+      "round": 2,
+      "id": "call_be8OJ6KDPS6ZJ2ZaLZdzZWQa",
+      "name": "calculate",
+      "arguments": "{\"expression\":\"1845-1837\"}",
+      "result": {
+        "result": 8
+      },
+      "seconds": 0.00010330002987757325
+    }
+  ],
+  "hit_round_limit": false,
+  "correct": true,
+  "error": null
+}

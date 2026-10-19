@@ -1,0 +1,19 @@
+{
+  "question_id": "Q-12",
+  "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield: \\(16{,}021.7\\) million tenge ÷ \\(13{,}904\\) pupils = \\(1{,}152.3\\) thousand tenge per pupil.  \nTarnvale: \\(12{,}960.3\\) million tenge ÷ \\(10{,}652\\) pupils = \\(1{,}216.7\\) thousand tenge per pupil.  \nDifference: \\(64.4\\) thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.4",
+  "parsed": {
+    "name": "Tarnvale",
+    "value": 64.4
+  },
+  "unanswered": false,
+  "rounds": 1,
+  "input_tokens": 2215,
+  "output_tokens": 118,
+  "total_seconds": 3.3753352999920025,
+  "seconds": 3.3753352999920025,
+  "correct": true,
+  "error": null
+}

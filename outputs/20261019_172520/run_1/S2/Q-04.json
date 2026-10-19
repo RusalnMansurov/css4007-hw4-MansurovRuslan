@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-04",
+  "question": "Which district has more pupils per school in 2025/26, Ashgrove or Millbrook, and by how many pupils per school?",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: millbrook | 2.59",
+  "parsed": {
+    "name": "millbrook",
+    "value": 2.59
+  },
+  "unanswered": false,
+  "rounds": 5,
+  "input_tokens": 11110,
+  "output_tokens": 434,
+  "total_seconds": 10.393647199962288,
+  "samples": [
+    {
+      "answer": "Ashgrove: 8,837 ÷ 24 = 368.2083 pupils per school.  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school.  \nDifference: 370.8 − 368.2083 = 2.5917, which rounds to 2.59.\n\nANSWER: Millbrook | 2.59",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 2.59
+      },
+      "input_tokens": 2222,
+      "output_tokens": 83,
+      "seconds": 2.0169831999810413
+    },
+    {
+      "answer": "Ashgrove: \\(8{,}837 \\div 24 = 368.2083\\) pupils per school.\n\nMillbrook: \\(5{,}562 \\div 15 = 370.8\\) pupils per school.\n\nDifference: \\(370.8 - 368.2083 = 2.5917\\), so Millbrook has more by 2.59 pupils per school.\n\nANSWER: Millbrook | 2.59",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 2.59
+      },
+      "input_tokens": 2222,
+      "output_tokens": 96,
+      "seconds": 1.647277000010945
+    },
+    {
+      "answer": "Ashgrove: 8,837 ÷ 24 = 368.2083 pupils per school.  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school.  \nDifference: 370.8 − 368.2083 = 2.5917, so Millbrook has more by 2.59 pupils per school.\n\nANSWER: Millbrook | 2.59",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 2.59
+      },
+      "input_tokens": 2222,
+      "output_tokens": 89,
+      "seconds": 1.9640145000303164
+    },
+    {
+      "answer": "Ashgrove: 8,837 ÷ 24 = 368.2083 pupils per school.  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school.  \nDifference: 370.8 − 368.2083 = 2.5917, which rounds to 2.59.\n\nANSWER: Millbrook | 2.59",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 2.59
+      },
+      "input_tokens": 2222,
+      "output_tokens": 83,
+      "seconds": 2.4536129999905825
+    },
+    {
+      "answer": "Ashgrove: 8,837 ÷ 24 = 368.208333 pupils per school.  \nMillbrook: 5,562 ÷ 15 = 370.8 pupils per school.  \nDifference: 370.8 − 368.208333 = 2.591667, which rounds to 2.59.\n\nANSWER: Millbrook | 2.59",
+      "parsed": {
+        "name": "Millbrook",
+        "value": 2.59
+      },
+      "input_tokens": 2222,
+      "output_tokens": 83,
+      "seconds": 2.311492200009525
+    }
+  ],
+  "votes_for_winner": 5,
+  "correct": true,
+  "error": null
+}
